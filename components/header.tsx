@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="sticky top-0 z-40 flex items-center justify-between px-4 py-6 mx-auto bg-white border-b-2 border-gray-100 max-w-7xl sm:px-6 md:justify-start md:space-x-10">
+    <div className="sticky top-0 z-40 flex items-center justify-between px-4 py-2 mx-auto bg-white border-b-2 border-gray-100 sm:py-6 max-w-7xl sm:px-6 md:justify-start md:space-x-10">
       <div className="flex mx-auto">
         <Link href="/" scroll={true}>
           <a className="flex items-center text-blue-600">

@@ -9,7 +9,7 @@ export default function Page() {
   return (
     <>
       <Head>
-        <title>Ficra | Supercharge your Machine Learning Deployment</title>
+        <title>Ficra | Get Started</title>
       </Head>
       <Integrations />
       <Header />
