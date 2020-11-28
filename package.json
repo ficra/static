@@ -8,7 +8,12 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.24",
+    "@sendgrid/client": "^7.4.0",
+    "@sendgrid/mail": "^7.4.0",
+    "@tailwindcss/forms": "^0.2.1",
     "next": "10.0.3",
+    "node-fetch": "^2.6.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "sass": "^1.29.0"
@@ -16,6 +21,7 @@
   "devDependencies": {
     "@tailwindcss/ui": "^0.7.2",
     "@types/node": "^14.14.10",
+    "@types/node-fetch": "^2.5.7",
     "@types/react": "^17.0.0",
     "autoprefixer": "^10.0.2",
     "postcss": "^8.1.10",

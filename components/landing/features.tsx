@@ -12,7 +12,7 @@ export default class Features extends React.PureComponent {
         className="relative pt-24 sm:px-12 lg:pt-32"
       >
         {this._renderIntro()}
-        {this._renderFeatureList()}
+        {this._renderFeatures()}
         {this._renderLogos()}
         {this._renderCTA()}
       </section>
@@ -28,19 +28,28 @@ export default class Features extends React.PureComponent {
         <h1 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
           MLOps should be the easy part
         </h1>
-        <p className="max-w-2xl mt-4 text-base text-gray-500 sm:text-xl lg:mx-auto">
-          Training amazing ML models is hard enough without deployment concerns
-          like infrastructure, analytics, availability, and scaling. Let Ficra
-          handle that.
-        </p>
       </div>
     );
   }
 
-  private _renderFeatureList() {
+  private _renderFeatures() {
     return (
-      <div className="mt-12">
-        <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+      <div>
+        {this._renderFirstFeatureList()}
+        {this._renderSecondFeatureList()}
+      </div>
+    );
+  }
+
+  private _renderFirstFeatureList() {
+    return (
+      <div className="mt-6">
+        <p className="max-w-2xl mb-8 text-base text-gray-500 sm:text-xl lg:mx-auto lg:text-center">
+          Training amazing ML models is hard enough without deployment concerns
+          like infrastructure, analytics, availability, and scaling. Let Ficra
+          handle that.
+        </p>
+        <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
           {this._renderFeatureEntry(
             <svg
               className="w-6 h-6"
@@ -51,14 +60,14 @@ export default class Features extends React.PureComponent {
               aria-hidden="true"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M13 10V3L4 14h7v7l9-11h-7z"
               />
             </svg>,
             "Lightning fast deployment and serving",
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+            "Ficra's blazingly quick routing, ultra-optimized ML model runtimes, and intuitive API interfaces help you go from science to service in no-time.",
           )}
           {this._renderFeatureEntry(
             <svg
@@ -69,15 +78,29 @@ export default class Features extends React.PureComponent {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M17 9V7a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2m2 4h10a2 2 0 002-2v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6a2 2 0 002 2zm7-5a2 2 0 11-4 0 2 2 0 014 0z"
               ></path>
             </svg>,
-            "Pay only for what you use",
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+            "Pay for inference, not for uptime",
+            "Paying for CPU and GPU that sit idle doing nothing is old-school. Ficra's model runtimes are so optimized that we only need to charge you for the inferences you do.",
           )}
+        </div>
+      </div>
+    );
+  }
+
+  private _renderSecondFeatureList() {
+    return (
+      <div className="mt-12">
+        <p className="max-w-2xl mb-8 text-base text-gray-500 sm:text-xl lg:mx-auto lg:text-center">
+          Putting ML models into production is more than just spinning up a
+          server. Ficra provides you with the tools you need to manage your ML
+          deployments.
+        </p>
+        <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
           {this._renderFeatureEntry(
             <svg
               className="w-6 h-6"
@@ -87,14 +110,14 @@ export default class Features extends React.PureComponent {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
               ></path>
             </svg>,
             "Fine-grained model management tools",
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+            "A/B testing, automatic scaling, model version control, and automatic rollbacks are just some of the features that Ficra provides right out of the box.",
           )}
           {this._renderFeatureEntry(
             <svg
@@ -105,16 +128,16 @@ export default class Features extends React.PureComponent {
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
               ></path>
             </svg>,
             "Powerful control and analytics dashboard",
-            "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+            "Easily control and manage your deployments and view model runtime analytics through Ficra's intuitive user interface.",
           )}
-        </dl>
+        </div>
       </div>
     );
   }
@@ -122,10 +145,10 @@ export default class Features extends React.PureComponent {
   private _renderLogos() {
     return (
       <div className="mt-12">
-        <p className="mx-auto text-lg text-center">
-          If your model converts to{" "}
+        <p className="mx-auto text-lg text-center text-gray-600">
+          If your model converts to an{" "}
           <Link href="https://onnx.ai">
-            <a className="text-gray-500 hover:text-blue-600" target="_blank">
+            <a className="text-blue-500 hover:text-blue-600" target="_blank">
               ONNX
             </a>
           </Link>{" "}
@@ -165,7 +188,7 @@ export default class Features extends React.PureComponent {
     return (
       <div className="mt-12">
         <div className="max-w-xs mx-auto rounded-md shadow-sm">
-          <Link href="#">
+          <Link href="/get-started">
             <a className="flex items-center justify-center px-8 py-3 text-base font-semibold text-blue-600 bg-transparent border border-blue-600 rounded-md hover:bg-blue-600 hover:text-white md:py-4 md:text-lg md:px-10">
               Get Started for Free
             </a>
