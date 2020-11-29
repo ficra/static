@@ -211,8 +211,8 @@ export default class Usage extends React.PureComponent {
           Production in one, two, three
         </p>
         <p className="max-w-xl mt-4 text-base text-gray-500 sm:text-xl lg:mx-auto">
-          It's amusingly simple to get started with Ficra's free shared model
-          serving instances.
+          It's simple to get started with Ficra's free shared model serving
+          instances.
         </p>
       </div>
     );

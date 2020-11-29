@@ -45,9 +45,9 @@ export default class Features extends React.PureComponent {
     return (
       <div className="mt-6">
         <p className="max-w-2xl mb-8 text-base text-gray-500 sm:text-xl lg:mx-auto lg:text-center">
-          Training amazing ML models is hard enough without deployment concerns
-          like infrastructure, analytics, availability, and scaling. Let Ficra
-          handle that.
+          Training ML models is hard enough without deployment concerns like
+          infrastructure, analytics, availability, and scaling. Let Ficra handle
+          that.
         </p>
         <div className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
           {this._renderFeatureEntry(
@@ -67,7 +67,7 @@ export default class Features extends React.PureComponent {
               />
             </svg>,
             "Lightning fast deployment and serving",
-            "Ficra's blazingly quick routing, ultra-optimized ML model runtimes, and intuitive API interfaces help you go from science to service in no-time.",
+            "Ficra's quick routing, optimized ML model runtimes, and intuitive API interfaces help you go from science to service in no-time.",
           )}
           {this._renderFeatureEntry(
             <svg
@@ -85,7 +85,7 @@ export default class Features extends React.PureComponent {
               ></path>
             </svg>,
             "Pay for inference, not for uptime",
-            "Paying for CPU and GPU that sit idle doing nothing is old-school. Ficra's model runtimes are so optimized that we only need to charge you for the inferences you do.",
+            "Paying for CPU and GPU that sit idle is old-school. Ficra's model runtimes are so optimized that we only need to charge you for the inferences you make.",
           )}
         </div>
       </div>
@@ -146,13 +146,13 @@ export default class Features extends React.PureComponent {
     return (
       <div className="mt-12">
         <p className="mx-auto text-lg text-center text-gray-600">
-          If your model converts to an{" "}
+          If your model converts to{" "}
           <Link href="https://onnx.ai">
             <a className="text-blue-500 hover:text-blue-600" target="_blank">
               ONNX
             </a>
           </Link>{" "}
-          format, we support it!
+          format, we support it.
         </p>
         <div className="flex items-center justify-center mt-8 space-x-8">
           {this._renderLogo(
@@ -211,7 +211,7 @@ export default class Features extends React.PureComponent {
           </div>
         </div>
         <div className="ml-4">
-          <dt className="text-lg font-medium leading-6 text-gray-900">
+          <dt className="text-lg font-semibold leading-6 text-gray-900">
             {title}
           </dt>
           <dd className="mt-2 text-base text-gray-500">{content}</dd>

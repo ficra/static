@@ -27,12 +27,13 @@ export default class Hero extends React.PureComponent {
           <span className="sm:block">Machine Learning Deployment</span>
         </h1>
         <p className="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-          Say good-bye to expensive and redundant ML model deployment routines!
-          Start using <span>Ficra</span> for{" "}
-          <span className="px-2 py-1 font-semibold text-gray-500 bg-gray-100 rounded-md">
-            $0/month
-          </span>{" "}
-          to streamline your ML deployment operations.
+          Say good-bye to expensive and redundant ML model deployment routines.
+          With a few lines of code start using <span>Ficra</span> to deploy,
+          scale, and manage your ML models for{" "}
+          <span className="z-0 px-2 py-1 font-semibold text-gray-500 bg-gray-100 rounded-md">
+            $0 / month
+          </span>
+          .
         </p>
         <div className="mt-5 space-y-4 sm:space-y-0 sm:space-x-8 sm:flex sm:justify-center sm:mt-12 lg:justify-start">
           <div className="rounded-md shadow-sm">
@@ -58,7 +59,7 @@ export default class Hero extends React.PureComponent {
     return (
       <div className="absolute right-0 hidden w-1/2 h-full lg:block">
         <svg
-          className="absolute inset-y-0 left-0 w-48 h-full text-white"
+          className="absolute inset-y-0 left-0 z-10 w-48 h-full text-white"
           fill="currentColor"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"

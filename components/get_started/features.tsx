@@ -45,7 +45,7 @@ export default class Component extends React.PureComponent {
         <p className="text-center text-gray-800 text-normal">
           Get started with Ficra for{" "}
           <span className="p-2 mx-1 font-semibold text-gray-600 bg-gray-100 rounded-md">
-            $0/month
+            $0 / month
           </span>{" "}
           below!
         </p>

@@ -23,7 +23,7 @@ export default class Pricing extends React.PureComponent {
           Pricing
         </h3>
         <h2 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl">
-          Pricing that doesn't hold you back
+          Expenses that don't hold you back
         </h2>
         <p className="max-w-2xl mt-4 text-base text-gray-500 sm:text-xl lg:mx-auto">
           Reliable ML deployments shouldn't just be in the hands of the big
@@ -166,7 +166,7 @@ export default class Pricing extends React.PureComponent {
             </div>
             {comingSoon ? null : (
               <div className="ml-4 text-base font-bold text-gray-600">
-                $0/month
+                $0 / month
               </div>
             )}
           </div>
